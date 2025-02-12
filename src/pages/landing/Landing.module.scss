@@ -1,0 +1,69 @@
+@import "../../styles/abstracts/colours";
+@import "../../styles/abstracts/fonts";
+
+.landingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: #1a1a2e;
+  color: white;
+  padding: 20px;
+  animation: fadeIn 0.8s ease-in-out forwards;
+
+  h2 {
+    font-size: 2rem;
+    color: #00aaff;
+  }
+
+  .buttonGroup {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.animatedButton,
+.animatedLogout {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animatedButton {
+  background: #00aaff;
+  color: white;
+
+  &:hover {
+    background: #0088cc;
+    transform: scale(1.05);
+  }
+}
+
+.animatedLogout {
+  background: #ff4d4d;
+  color: white;
+
+  &:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
