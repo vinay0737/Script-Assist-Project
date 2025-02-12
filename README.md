@@ -2,7 +2,9 @@
 # Star Wars Database
 
 This is a React-based project that provides details about Star Wars characters, films, and homeworlds using public APIs. The project is built with React Router, Mantine UI, React Query, and Zustand for state management.
-
+# username and password for to login 
+ username:admin
+ password:password
 ## Features
 - Authentication with Zustand store
 -  sorting and pagination
